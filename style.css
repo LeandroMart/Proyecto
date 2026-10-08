@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    background-color: #D4D4D8;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    background-color: #D4D4D8;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.enlaces a {
+    padding: 20px 40px;
+    background-color: #737373;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+footer {
+    margin-top: 100px;
+    padding: 30px;
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.portals{
+    height: 100px;
+
+}
+
+.glados{
+    width: 100px;
+    height: 100px;
+}
+
+.pantalla-carga {
+    position: fixed;
+    inset: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    animation: desaparecer 1s ease 4s forwards;
+}
+
+.cargando {
+    width: 400px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.cargando p:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.barra {
+    width: 100%;
+    height: 10px;
+    background-color: #555;
+    margin: 30px 0 15px;
+}
+
+.progreso {
+    height: 100%;
+    width: 0%;
+    background-color: #f57c00;
+
+    animation: cargar 4s linear forwards;
+}
+
+.texto-carga {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+@keyframes cargar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.formulario-aperture {
+    width: 90%;
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #e5e5e5;
+    border: 3px solid #222;
+    box-shadow: 10px 10px 0 #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-header {
+    border-bottom: 3px solid #222;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.form-header span {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.form-header h2 {
+    font-size: 32px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.form-header p {
+    color: #444;
+}
+
+.campo {
+    margin-bottom: 22px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    border: 2px solid #333;
+    background: #f5f5f5;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #e87511;
+    box-shadow: 0 0 0 2px #e87511;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    font-size: 13px;
+}
+
+.checkbox input {
+    accent-color: #e87511;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #222;
+    background: #e87511;
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #ff8c1a;
+}
+
+.form-footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #999;
+    font-size: 10px;
+    color: #555;
+    letter-spacing: 1px;
+}
+.vid{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.turret-info {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #e5e5e5;
+    border: 3px solid #222;
+    box-shadow: 10px 10px 0 #222;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.turret-header {
+    border-bottom: 3px solid #222;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.turret-header span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.turret-header h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.modelo {
+    font-size: 13px;
+    color: #555;
+    font-weight: bold;
+}
+
+.turret-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.turret-status p {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.turret-info h3 {
+    border-left: 8px solid #e87511;
+    padding-left: 12px;
+    margin-top: 35px;
+}
+
+.turret-info p {
+    line-height: 1.7;
+    color: #333;
+}
+
+.aperture-note {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.warning {
+    margin: 25px 0;
+    padding: 15px;
+    border: 2px solid #222;
+    background: #e87511;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.turret-info ul {
+    line-height: 2;
+}
+
+.turret-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #999;
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 1px;
+}
+.portal-gun-info {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #e5e5e5;
+    border: 3px solid #222;
+    box-shadow: 10px 10px 0 #222;
+    box-sizing: border-box;
+}
+
+.portal-header {
+    border-bottom: 3px solid #222;
+    padding-bottom: 20px;
+}
+
+.portal-header span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.portal-header h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.portal-header p {
+    font-size: 13px;
+    color: #555;
+    font-weight: bold;
+}
+
+.portal-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.portal-status p {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.portal-gun-info h3 {
+    border-left: 8px solid #e87511;
+    padding-left: 12px;
+    margin-top: 35px;
+}
+
+.portal-gun-info p {
+    line-height: 1.7;
+}
+
+.portal-types {
+    display: flex;
+    gap: 20px;
+}
+
+.portal-card {
+    flex: 1;
+    padding: 20px;
+    border: 3px solid #222;
+    background: #f5f5f5;
+}
+
+.portal-card h4 {
+    margin-top: 0;
+}
+
+.blue-portal {
+    border-left: 10px solid #2d8cff;
+}
+
+.orange-portal {
+    border-left: 10px solid #e87511;
+}
+
+.warning {
+    margin-top: 30px;
+    padding: 15px;
+    background: #e87511;
+    border: 2px solid #222;
+    font-weight: bold;
+}
+
+.portal-gun-info ul {
+    line-height: 2;
+}
+
+.portal-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #999;
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 1px;
+}
